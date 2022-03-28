@@ -8,7 +8,7 @@ import { selectSettings } from './notificationsSettingsSlice';
 
 const NotificationsSettings = () => {
   const settings = useSelector(selectSettings);
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(-1);
 
   const handleClick = (e, titleProps) => {
     const { index } = titleProps;
